@@ -1,7 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 .dino {
-    width: 60px;
-    height: 60px;
-    background: green;
+    width: 67px;
+    height: 40px;
+    background: url('images/interfaceJogoDinoMulti.png') left center;
+    background-size: cover;
     position: absolute;
     bottom: 0;
+    margin-left: 60px;
+    animation: play 0.6s steps(4) infinite;
+    display: inline-block;
+}
+@keyframes play {
+    100% {background-position: -268px ;}
+}
+
+.cactus{
+    width: 113px;
+    height: 54px;
+    background-image: url('images/series.png');
+    background-size: 113px 54px;
+    position: absolute;
+    bottom: 0;
+}
+.smartphone{
+    width: 50px;
+    height: 28px;
+    background-image: url('images/smartphone.png');
+    background-size: 50px 28px;
+    position: absolute;
+    bottom: 65px;
+}
+
+.main-container{
+    background: #444344;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 950px;
+    height: 200px;
+}
+.painel{
+    display: flex;
+    height: 10 px;
+    width: 950px;
+    background: #444344;
+    justify-content: space-between;
+   
+}
+.painel-organize{
+    margin-top: 8px;
+    align-content: center;
+    text-align: center;
+    height: 18px;
+    width: 200px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    color: honeydew;
+}
+
+.background {
+    margin-top: 20px;
+    position: absolute;
+    background: #444344;
+    background-image: url('images/background.png');
+    background-repeat: repeat-x;
+    animation: sliderigth 120s infinite linear;
+    height: 200px;
+    margin-top: 10px;
+    width: 950px;
+}
+
+@keyframes sliderigth {
+    from {
+        background-position: 0%;
+    }to{
+        background-position: 70000%;
+    }
+}
+
+.container-image {
+    margin-top: 40px;
+    width: 100vw;
+    height: 550px;
+    background: #2e2c2e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image {
+    width: 359px;
+    height: 212px;
 }
