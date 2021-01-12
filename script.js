@@ -38,6 +38,7 @@ const hearttList = [
     "&#10084; &#10084; &#10084; &#10084;",
 ];
 
+document.addEventListener('keyup', handleKeyUp)
 
 function handleKeyUp(event){
     if(event.keyCode === 38){
@@ -55,7 +56,6 @@ function handleKeyUp(event){
         }
     }
 }
-
 
 function jump(){
     isJumping =  true;
@@ -258,4 +258,3 @@ function getLevel(hS){
     return highNumberReturn;
 }
 
-document.addEventListener('keyup', handleKeyUp)
